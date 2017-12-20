@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>homepage</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!-- my js file -->
+        <script src="js/myjs.js"></script>
+        <!-- my css file -->
+        <link href="css/mycss.css" rel="stylesheet">
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
+        </head>
+        <body data-spy="scroll" datatarget=".navbar" data-offset="50">
+          <!-- Static navbar -->
+          <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbars" aria-expanded="false" aria-controls="navbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#part0" id="brand">WSSE Midterm Project</a>
+              </div>
+              <div id="navbars" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active"><a href="#part0">HOME</a></li>
+                  <li><a href="#part1">ABOUT</a></li>
+                  <li><a href="#part2">HOBBY</a></li>
+                  <li><a href="#part3">CHOCOLATE</a></li>
+                  <li><a href="#part4">BAND</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
+        <div id="part0" class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 col-sm-12 text-center">
+              <img class="img-circle img-responsive" 
+              src="pic/people.png" alt="peole" onmousemove="getCoordinates(event)" onmouseleave="clearCoordinates()">
+              <h3><em>Can you find me?</em></h3>
+            </div>
+            <div class="col-md-6 col-sm-12 offset-md-1 jumbotron text-center">
+              <h1 class="loadin">Chien-Ming Liao</h1>
+              <h3>Born in 1996,Taiwan.</h3>
+              <p>Aged to perfection.</p>
+              <p>Tiny Hints:
+                <span id="hints">
+                  <br>- Little Little guy
+                  <br>- Side parting hair
+                  <br>- Round eye glasses
+                </span>
+              </p>
+              <div id="xycoordinates">Move your mouse on the picture to find me.<br>(only avaliable in 1920x1080)</div>
+            </div>
+          </div>
+        </div>
+          
+
+        <div id="part1" class="container-fluid text-center">
+          <h1>A b o u t M e</h1>
+          <h3>(Touch the box)</h3>
+          <div class="row row-fluid text-center">
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <div class="col_third">
+                <div class="hover panel">
+                  <div class="front">
+                    <div class="box1">
+                      <br><p>Favorite food</p>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="box2">
+                      <br><p>Beef</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <div class="col_third">
+                <div class="hover panel">
+                  <div class="front">
+                    <div class="box1">
+                      <br><p>Brothers or sisters</p>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="box2">
+                      <br><p>One older brother</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <div class="col_third">
+                <div class="hover panel">
+                  <div class="front">
+                    <div class="box1">
+                      <br><p>Girl type</p>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="box2">
+                      <br><p>The Fashionista</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <div class="col_third">
+                <div class="hover panel">
+                  <div class="front">
+                    <div class="box1">
+                      <br><p>Favorite teacher?</p>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="box2">
+                      <br><p>WTLee</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <div class="col_third">
+                <div class="hover panel">
+                  <div class="front">
+                    <div class="box1">
+                      <br><p>Sport i like best</p>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="box2">
+                      <br><p>Basketball</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <div class="col_third">
+                <div class="hover panel">
+                  <div class="front">
+                    <div class="box1">
+                      <br><p>Movie genres</p>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="box2">
+                      <br><p>Adventure</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <div class="col_third">
+                <div class="hover panel">
+                  <div class="front">
+                    <div class="box1">
+                      <br><p>Hillary or Trump</p>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="box2">
+                      <br><p>Hillary</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <div class="col_third">
+                <div class="hover panel">
+                  <div class="front">
+                    <div class="box1">
+                      <br><p>Scissors Stone Cloth</p>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="box2">
+                      <br><p>Stone</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <div class="col_third">
+                <div class="hover panel">
+                  <div class="front">
+                    <div class="box1">
+                      <br><p>Chocolate type</p>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="box2">
+                      <br><p>Almond chocolate</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="part2" class="container-fluid text-center">
+          <h1>H o b b i e s</h1><br>
+          <div class="row">
+            <div class="col-md-4 banner slideanim">
+              <img src="pic/s_bass.png">
+              <h3>Bass Guitar</h3>
+            </div>
+            <div class="col-md-4 banner slideanim">
+              <img src="pic/s_guitar.png">
+              <h3>Guitar</h3>
+            </div>
+            <div class="col-md-4 banner slideanim">
+              <img src="pic/s_piano.png">
+              <h3>Piano</h3>
+            </div>
+          </div><br><br>
+          <div class="row">
+            <div class="col-md-4 banner slideanim">
+              <img src="pic/s_workout.png">
+              <h3>Workout</h3>
+            </div>
+            <div class="col-md-4 banner slideanim">
+              <img src="pic/s_boardgame.png">
+              <h3>Boardgames</h3>
+            </div>
+            <div class="col-md-4 banner slideanim">
+              <img src="pic/s_surfing.png">
+              <h3>Surfing</h3>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <div id="part3" class="container-fluid text-center">
+          <h1>Chocolate Recommended</h1><img src="pic/snoopy.png" style="height: 50px;width: 50px;">
+          <h4><em>“All you need is love. But a little chocolate now and then doesn't hurt.” 
+― Charles M. Schulz</em></h4>
+          <div class="row">
+            <div class="col-md-4 banner slideanim">
+              <img src="pic/lindt.png" class="logos">
+              <h3>Lindt</h3>
+            </div>
+            <div class="col-md-4 banner slideanim">
+              <img src="pic/hersheys.png" class="logos">
+              <h3>Hershey's</h3>
+            </div>
+            <div class="col-md-4 banner slideanim" >
+              <img src="pic/haighs.png" class="logos">
+              <h3>Haigh's</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 banner slideanim">
+              <img src="pic/godiva.png" class="logos">
+              <h3>Godiva</h3>
+            </div>
+            <div class="col-md-4 banner slideanim">
+              <img src="pic/royce.png" class="logos">
+              <h3>Royce'</h3>
+            </div>
+            <div class="col-md-4 banner slideanim" >
+              <img src="pic/rittersport.png" class="logos">
+              <h3>Ritter Sport</h3>
+            </div>
+          </div>
+        </div>
+
+        <div id="part4" class="container-fluid text-center">
+          <h1>S i l e n t A r e a</h1>
+          <h3><em>My highschool band</em></h3>
+          <br><br>
+          <div class="row">
+            <div class="col-md-2">
+              <h2><strong>L.J.M</strong></h2>
+              <a href="#link1" data-toggle="collapse">
+                <img src="pic/bass.png" class="img-circle member">
+              </a>
+              <div id="link1" class="collapse in">
+                <div class="panel-group">
+                  <div class="panel panel-info">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#collapse1">Bass player</a>
+                      </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                      <ul class="list-group">
+                        <li class="list-group-item">Clever</li>
+                        <li class="list-group-item">R.H.C.P</li>
+                        <li class="list-group-item">NKNU SEM</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <h2><strong>L.J.Y</strong></h2>
+              <a href="#link2" data-toggle="collapse">
+                <img src="pic/guitar.png" class="img-circle member">
+              </a>
+              <div id="link2" class="collapse">
+                <div class="panel-group">
+                  <div class="panel panel-info">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#collapse2">Rhythm guitar</a>
+                      </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse in">
+                      <ul class="list-group">
+                        <li class="list-group-item">Emotional</li>
+                        <li class="list-group-item">The Script</li>
+                        <li class="list-group-item">KMU Dentistry</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <h2><strong>C.Y.C</strong></h2>
+              <a href="#link3" data-toggle="collapse">
+                <img src="pic/vocal.png" class="img-circle member">
+              </a>
+              <div id="link3" class="collapse">
+                <div class="panel-group">
+                  <div class="panel panel-info">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#collapse3">Vocalist</a>
+                      </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse in">
+                      <ul class="list-group">
+                        <li class="list-group-item">Agreeable</li>
+                        <li class="list-group-item">Tokyo Accident</li>
+                        <li class="list-group-item">Yuntech Creative Design </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <h2><strong>H.C.S</strong></h2>
+              <a href="#link4" data-toggle="collapse">
+                <img src="pic/key.png" class="img-circle member">
+              </a>
+              <div id="link4" class="collapse">
+                <div class="panel-group">
+                  <div class="panel panel-info">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#collapse4">Keyboard</a>
+                      </h4>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse in">
+                      <ul class="list-group">
+                        <li class="list-group-item">Naive</li>
+                        <li class="list-group-item">Nightwish</li>
+                        <li class="list-group-item">NTU LAW</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <h2><strong>L.W.Y</strong></h2>
+              <a href="#link5" data-toggle="collapse">
+                <img src="pic/guitar.png" class="img-circle member">
+              </a>
+              <div id="link5" class="collapse">
+                <div class="panel-group">
+                  <div class="panel panel-info">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#collapse5">Lead guitar</a>
+                      </h4>
+                    </div>
+                    <div id="collapse5" class="panel-collapse collapse in">
+                      <ul class="list-group">
+                        <li class="list-group-item">Charming</li>
+                        <li class="list-group-item">L'Arc~en~Ciel</li>
+                        <li class="list-group-item">NTU ME</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <h2><strong>C.W.P</strong></h2>
+              <a href="#link6" data-toggle="collapse">
+                <img src="pic/drum.png" class="img-circle member">
+              </a>
+              <div id="link6" class="collapse">
+                <div class="panel-group">
+                  <div class="panel panel-info">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#collapse6">Drummer</a>
+                      </h4>
+                    </div>
+                    <div id="collapse6" class="panel-collapse collapse in">
+                      <ul class="list-group">
+                        <li class="list-group-item">Generous</li>
+                        <li class="list-group-item">Iron Maiden</li>
+                        <li class="list-group-item">FuJen JapaneseLC</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br><br><br><br><br><br><br><br><br><br>
+          <div class="alert alert-success alert-dismissable fade in">
+                <a href="" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <strong>Click the icon to open/close profile list.</strong> 
+          </div>
+        </div>
+
+        <!--footer-->
+        <footer class="container-fluid text-center">
+          <a href="#top" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+          </a><br>
+          <p>Bootstrap Theme Made By 
+            <a href="https://www.facebook.com/jianming.liao7" title="Visit me">jianmingliao</a>
+          </p>
+        </footer>
+        </body>
+</html>
